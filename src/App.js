@@ -1,24 +1,10 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import './App.css'
 import Header from "./components/Header"
 import hero from "./images/illustration-hero.svg"
 import background from "./images/pattern-background-desktop.svg"
 import music from "./images/icon-music.svg"
-import styled, { css } from 'styled-components'
-import {useState, useEffect} from 'react'
+import styled from 'styled-components'
+import {useState} from 'react'
 import Main from "./components/Main"
 
 function App() {
