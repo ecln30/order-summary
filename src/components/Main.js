@@ -1,11 +1,7 @@
 import React from 'react';
 
 function Main({background, music, Button, plan, setPlan, price, setPrice}) {
-    
-    
-   
-    let item = ''
-    
+     
     function change() {
        plan === "Annual Plan" ? setPlan("Monthly Plan") : setPlan("Annual Plan")
        price === "59.99/year" ? setPrice("7.19/month") : setPrice("59.99/year")
@@ -28,13 +24,12 @@ function Main({background, music, Button, plan, setPlan, price, setPrice}) {
                 <p className="discript">
                     You can now listen to millions of songs,<br/> audiobooks, and podcasts on any 
                     device <br/><span className="last-words">anywhere you like!</span>
-                    
                 </p>
+        
                 <div className="plan">
                     
                     <img src={music} alt="" />
                    <h3 className="Annual">{plan}<span className="price">{price}</span></h3>
-                   
                     
                    <h4 className="change" onClick={change} > Change</h4>
                 </div>
