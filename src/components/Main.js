@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
 
 function Main({background, music, Button, plan, setPlan, price, setPrice}) {
