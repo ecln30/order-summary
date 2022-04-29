@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Fira sans', sans-serif;
+}
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin-top: 100px;
+  width: 1440;
+  height: 900px;
+  background:hsl(225, 100%, 94%)
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.App{ 
+
+  background:white;
+     
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{ 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 425px;
+  border-radius: 0px 0px 10px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.title { 
+    margin-top: 40px;
+   color:hsl(223, 47%, 23%)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.discript { 
+
+     margin-top: 20px;
+     color: hsl(224, 23%, 55%);
+     font-size: 16px; 
+
 }
+
+.plan { 
+     width: 350px;
+     height: 80px;
+
+    display: flex;
+    justify-content: space-around;
+    background:  hsl(225, 100%, 98%);
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.Annual {
+   color: hsl(223, 47%, 23%);
+   
+}
+
+.price {
+   color:hsl(224, 23%, 55%);
+   margin-top: 10px;
+}
+img{
+    border-radius: 50%;
+    background: hsl(223, 47%, 23%);
+    border: 0px ;
+    outline: 0px;
+    
+}
+
+.price {
+     display: flex;
+     flex-direction: column;
+    
+}
+
+
+.change {
+   margin-left: 30px;
+   color: hsl(245, 75%, 52%);
+   border-bottom: 1px solid hsl(245, 75%, 52%) ;
+   cursor: pointer
+}
+
+.PayBtn {
+     color:hsl(245, 75%, 52%) ;
+     width:350px;
+     height: 50px;
+     border-radius: 10px;
+     border: none;
+     color: white;
+     font-weight: bold;
+     font-size: 16px;
+     margin-top: 30px;
+     cursor: pointer
+
+}
+
+.cancel {
+   margin-top: 30px;
+   color:hsl(224, 23%, 55%)
+}
+
+
+
+
+
+
+
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

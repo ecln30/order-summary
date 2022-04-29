@@ -1,23 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import './App.css'
+import Header from "./components/Header"
+import hero from "./images/illustration-hero.svg"
+import background from "./images/pattern-background-desktop.svg"
+import music from "./images/icon-music.svg"
+import styled, { css } from 'styled-components'
+import {useState, useEffect} from 'react'
+import Main from "./components/Main"
 
 function App() {
+   
+  const [plan, setPlan] = useState("Annual Plan")
+  const [price, setPrice] = useState("59.99/year")
+
+  const Container = styled.div`
+       
+  `
+  const Hero = styled.div`
+       
+     `
+  const Img = styled.img`
+         border-radius: 10px 10px 0 0;
+         `
+  const Button = styled.button`
+         background: hsl(245, 75%, 52%)
+  
+        `
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        
+      
+            <Header hero={hero} 
+            styled={styled}
+            Hero={Hero}
+            Img={Img} 
+            Container={Container}
+         
+            />
+              
+            <Main
+              background={background}
+              music={music}
+              Button={Button}
+              setPlan={setPlan}
+              plan={plan}
+              price={price}
+              setPrice={setPrice}
+            />
+        
     </div>
   );
 }
